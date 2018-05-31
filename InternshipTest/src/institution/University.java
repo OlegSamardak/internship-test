@@ -12,10 +12,6 @@ public class University {
         this.name = name;
     }
 
-    public void setStudent(Student student) {
-        //TODO: Implementation is needed
-    }
-
     public void addStudent(Student student) {
         students.add(student);
     }
@@ -25,7 +21,6 @@ public class University {
         for (Student student: students){
             knowledgeSum += student.getKnowledge();
         }
-        double result = knowledgeSum/students.size();
-        return result;
+        return (double) (knowledgeSum/students.size());
     }
 }
