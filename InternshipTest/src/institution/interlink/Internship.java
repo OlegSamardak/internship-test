@@ -17,7 +17,10 @@ public class Internship {
     }
 
     public String getStudents() {
-        //TODO: Implementation is needed
-        return "Andrew Maslenko\nJulia Veselkina\n";
+        String result = "";
+        for (Student student: students){
+            result += student.getName()+"\n";
+        }
+        return result;
     }
 }
