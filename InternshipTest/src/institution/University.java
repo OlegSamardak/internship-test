@@ -2,9 +2,14 @@ package institution;
 
 import person.Student;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class University {
+    private String name;
+    List<Student> students = new ArrayList<>();
     public University(String name) {
-        //TODO: Implementation is needed
+        this.name = name;
     }
 
     public void setStudent(Student student) {
@@ -12,6 +17,6 @@ public class University {
     }
 
     public void addStudent(Student student) {
-        //TODO: Implementation is needed
+        students.add(student);
     }
 }

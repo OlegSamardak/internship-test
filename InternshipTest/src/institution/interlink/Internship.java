@@ -2,13 +2,18 @@ package institution.interlink;
 
 import person.Student;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Internship {
+    private String name;
+    private List<Student> students = new ArrayList<>();
     public Internship(String name) {
-        //TODO: Implementation is needed
+        this.name = name;
     }
 
-    public void setStudent(Student student) {
-        //TODO: Implementation is needed
+    public void addStudent(Student student) {
+        students.add(student);
     }
 
     public String getStudents() {
