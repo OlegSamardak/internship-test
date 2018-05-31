@@ -1,5 +1,6 @@
 package institution.interlink;
 
+import institution.University;
 import person.Student;
 
 import java.util.ArrayList;
@@ -12,8 +13,11 @@ public class Internship {
         this.name = name;
     }
 
-    public void addStudent(Student student) {
-        students.add(student);
+    public void addStudent(Student student, University university) {
+        if (university.getAverageKnowledge()<= student.getKnowledge())
+            students.add(student);
+        else
+            System.out.println("Нажаль, студент має недостатній рівень знань.");
     }
 
     public String getStudents() {

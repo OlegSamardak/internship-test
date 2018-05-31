@@ -16,7 +16,7 @@ public class University {
         students.add(student);
     }
 
-    private double getAvarageKnowledge(){
+    public double getAverageKnowledge(){
         int knowledgeSum = 0;
         for (Student student: students){
             knowledgeSum += student.getKnowledge();
