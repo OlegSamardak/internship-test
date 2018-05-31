@@ -19,4 +19,13 @@ public class University {
     public void addStudent(Student student) {
         students.add(student);
     }
+
+    private double getAvarageKnowledge(){
+        int knowledgeSum = 0;
+        for (Student student: students){
+            knowledgeSum += student.getKnowledge();
+        }
+        double result = knowledgeSum/students.size();
+        return result;
+    }
 }

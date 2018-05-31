@@ -16,4 +16,8 @@ public class Student {
     public String getName() {
         return name;
     }
+
+    public int getKnowledge() {
+        return knowledge.getLevel();
+    }
 }
