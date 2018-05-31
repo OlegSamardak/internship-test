@@ -16,7 +16,6 @@ public class Application {
         university.addStudent(secondStudent);
         university.addStudent(thirdStudent);
         university.addStudent(fourthStudent);
-        System.out.println(university.getAverageKnowledge());
 
         Internship internship = new Internship("Interlink");
         internship.addStudent(firstStudent, university);
