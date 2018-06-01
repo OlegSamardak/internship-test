@@ -17,10 +17,17 @@ public class University {
     }
 
     public double getAverageKnowledge(){
+        if (students.isEmpty()){
+            return 0;
+        }
         int knowledgeSum = 0;
         for (Student student: students){
             knowledgeSum += student.getKnowledge();
         }
         return (double) (knowledgeSum/students.size());
+    }
+
+    public List<Student> getStudents() {
+        return students;
     }
 }

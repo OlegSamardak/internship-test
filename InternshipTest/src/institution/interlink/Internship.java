@@ -14,10 +14,14 @@ public class Internship {
     }
 
     public void addStudent(Student student, University university) {
-        if (university.getAverageKnowledge() < student.getKnowledge())
-            students.add(student);
+        if (university.getStudents().contains(student)) {
+            if (university.getAverageKnowledge() < student.getKnowledge())
+                students.add(student);
+            else
+                System.out.println("Нажаль, студент " + student.getName() + " має недостатній рівень знань.");
+        }
         else
-            System.out.println("Нажаль, студент " + student.getName() + " має недостатній рівень знань.");
+            System.out.println("Студент не навчається в цьому ВУЗі");
     }
 
     public String getStudents() {
